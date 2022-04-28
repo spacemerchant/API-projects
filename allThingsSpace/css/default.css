@@ -69,8 +69,12 @@
 		justify-content: center;
 	}
 
-	.apodImg {
+	.apodImg, .pApodImg {
 		object-fit: contain;
+	}
+
+	.pApodIframe {
+		max-width: 500px;
 	}
 
 
@@ -187,6 +191,10 @@
 			padding: 1.6em 4em;
 			font-size: 1.4em;
 			font-weight: 900;
+		}
+	
+		input.date {
+			margin: 20px 0;
 		}
 			
 /*********************************************************************************/
@@ -375,15 +383,38 @@
 		width: 700px;
 	}
 
-	#apod {
+	#apod, #pApod {
 		margin: 40px 0;
 	}
 
-	.apodText {
+	.apodText, .pApodText {
 		margin-top: 20px;
 		font-size: 1.2rem;
 	}
 
+	.heroSelection{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-column-gap: 5px;
+	}
+
+	.selection {
+		margin: 10 0px;
+	}
+
+	.sLeft{
+	}
+
+	.or {
+		display: flex;
+		align-items: center;
+		margin: 20px 20px 20px 7px;
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.sRight {
+	}
 
 
 

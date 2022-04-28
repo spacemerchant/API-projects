@@ -37,18 +37,32 @@
 	<div id="wrapper">
 
 		<div id="page" class="container">
-			<div id="">
+
+			<div class="columnLeft">
 				<div class="title hero">
 					<h2>Leaving Earth</h2>
-					<span class="byline">Prepare to explore the far reaches of our universe</span> </div>
+					<span class="byline">Prepare to explore the far reaches of our universe</span> 
 				</div>
 
-				<div>
-					<p>Discover the cosmos! with new media curated daily by NASA, featuring a brief explanation by a professional astronomer!</p>
+			</div>
 
-				<button class="apodButton button">Picture of the Day</button>
+				<section class="heroSelection">
 
-				</div>
+					<div class="selection sLeft">
+						<p>Discover the cosmos! with new media curated daily by NASA, featuring a brief explanation by a professional astronomer!</p>
+					<button class="apodButton button">Picture of the Day</button>
+					</div>
+
+					<div class="selection">
+						<span class="or"> OR </span>
+					</div>
+
+					<div class="selection sRight" >
+						<p>Look through previous top selections and explore our solar system in a new and exciting way</p>
+					<button class="pApodButton button">Past Pictures of the Day</button>
+					</div>
+
+				</section>
 
 		<div id="apod" class="container" hidden >
 			<section>
@@ -56,7 +70,7 @@
 
 				<div class="apodMediaContainer">
 					<img class="apodImg" src="" alt="">
-					<iframe class="apodIframe" src="" frameborder="0" hidden></iframe>
+					<iframe class="apodIframe" src="" frameborder="0" ></iframe>
 
 				</div>
 
@@ -72,6 +86,32 @@
 
 			</section>
 		</div>
+
+		<div id="pApod" class="container" hidden >
+			<section>
+
+				<h2 class="pApodTitle"></h2>
+				<input type="date" class="date">
+				<button class="inputFetch">Fetch Date</button>
+				
+
+				<div class="apodMediaContainer">
+					<img class="pApodImg" src="" alt="">
+					<iframe class="pApodIframe" src="" frameborder="0" ></iframe>
+
+				</div>
+
+				<div>
+
+					<span class="pApodDate"></span>
+					<a class="pApodLink" href="">IMAGE LINK</a>
+					<p class="pApodText"></p>		
+					<span class="pApodCopy"></span>
+				</div>
+
+			</section>
+		</div>
+
 
 		</div>
 
@@ -92,6 +132,7 @@
 
 
 	<script src="js/main.js"></script>
+	
 </body>
 
 </html>
